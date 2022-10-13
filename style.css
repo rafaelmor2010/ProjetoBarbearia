@@ -338,6 +338,13 @@ esquerda e direita 0*/
     text-align: center;
 }
 
+/*mexendo no vídeo*/
+.video {
+    width: 560px;
+    /*centralizando vídeo*/
+    margin: 1em auto;
+}
+
 
 /*----------------------Dicas ---------------------------------*/
 /*
