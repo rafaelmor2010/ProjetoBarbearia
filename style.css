@@ -186,7 +186,7 @@ font-size: 13px;
 
 /*Página contato.html------------------------------------------*/
 
-main {
+.main {
     /*Largura padrão*/
     width: 940px;
     /* 0 cima e baixo e auto direita e esquerda
@@ -274,6 +274,15 @@ table {
     width: 100%;
 
 }
+.principal {
+    margin: 3em 0;
+    background: #fefefe;
+      /*Largura padrão*/
+      width: 940px;
+      /* 0 cima e baixo e auto direita e esquerda
+      centralizando*/
+      margin: 0 auto;
+}
 
 .titulo-principal {
     /*alinhando o título ao centro*/
@@ -305,7 +314,50 @@ table {
     font-style: italic;
 }
 
-.imagembeneficios {
+.beneficios {
+    /*3em 3x tamanho da fonte de espaçamento superior e inferior 
+esquerda e direita 0*/
+padding: 3em 0;
+background: #888888;
+}
+
+
+.itens {
+    /*altura da linha dos itens 1*5 igual 50% do tamanho da fonte*/
+    line-height: 1.5;
+}
+
+/*utilizando pseudo elementos first-child selecionando primeira criança
+da lista ou seja posso configurar primeiro da lista*/
+/*
+.itens:first-child {
+    font-weight: bold;
+}*/
+
+
+/*utilizando pseudo elementos nth-child(1) selecionando primeira criança
+da lista ou seja posso configurar primeiro da lista*/
+.itens:nth-child(1){
+    font-weight: bold;
+}
+
+.lista-beneficios {
+    width: 40%;
+    /*colocando o texto e a imagem um do lado do outro*/
+    /*código html tem que estar sem espaços para poder funcionar*/
+    display: inline-block;
+    /*colocando o texto no topo*/
+    vertical-align: top;
+    
+}
+
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+/* 60% dentro da div que tem um tamanho 640px*/
+.imagem-beneficios {
  /*largura 60%*/
     width: 60%;
 }
@@ -329,6 +381,16 @@ body {
     /*3em 3x tamanho da fonte de espaçamento superior e inferior 
 esquerda e direita 0*/
     padding: 3em 0;
+    /*colocando gradiente de fundo do branco para cinza*/
+    background: linear-gradient(#fefefe , #888888);
+      
+}
+
+.mapa-conteudo {
+    /*Largura padrão*/
+     
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
